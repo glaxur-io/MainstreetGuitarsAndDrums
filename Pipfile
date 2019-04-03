@@ -11,6 +11,7 @@ djangorestframework = "*"
 pillow = "*"
 gunicorn = "*"
 whitenoise = "*"
+psycopg2 = "*"
 
 [requires]
 python_version = "3.7"

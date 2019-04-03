@@ -1,3 +1,14 @@
 from django.shortcuts import render
+from django.views.generic import TemplateView, ListView, View, DetailView
 
-# Create your views here.
+
+class IndexView(TemplateView):
+    template_name = 'base.html'
+
+
+# class InstrumentList(ListView):
+#     pass
+#
+#
+# class EquipmentList(ListView):
+#     pass
