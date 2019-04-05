@@ -6,6 +6,10 @@ class IndexView(TemplateView):
     template_name = 'base.html'
 
 
+class HomeView(TemplateView):
+    template_name = 'home.html'
+
+
 # class InstrumentList(ListView):
 #     pass
 #

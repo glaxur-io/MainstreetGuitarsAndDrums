@@ -26,7 +26,8 @@ SECRET_KEY = '0hndc#d#fp5mek2l-he$kl0^woio#cvclp5*396op5e-w$xla4'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'mainstreetvintageguitar.herokuapp.com'
+    'mainstreetvintageguitar.herokuapp.com',
+    'localhost'
 ]
 
 
