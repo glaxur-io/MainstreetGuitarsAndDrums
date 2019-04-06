@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/styles/styles.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand">MSGD</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'base' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          For Sale
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'instruments' %}">Instruments</a>
+          <a class="dropdown-item" href="{% url 'equipment' %}">Equipment</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+</header>
+{#<div class="intro_title">#}
+{#    <h1>Main Street Guitars and Drums</h1>#}
+{#</div>#}
+
+
+{#<div class="fGZQDc">#}
+{#    <div class="kCmrbf"><h3 class="Gou21b">Contact</h3>#}
+{#        <div data-field="phone"><a class="PDvGL q8cvFf" href="tel:+1-864-293-1007" data-tracking-element-type="3"#}
+{#                                   jslog="56037; track:impression,click" itemprop="telephone" dir="ltr">Call now</a>#}
+{#            <ul class="R7Di0e">#}
+{#                <li dir="ltr">(864) 293-1007</li>#}
+{#            </ul>#}
+{#        </div>#}
+{#    </div>#}
+{#    <div class="kCmrbf"><h3 class="Gou21b">Address</h3>#}
+{#        <div data-field="address"><a class="PDvGL q8cvFf"#}
+{#                                     href="https://www.google.com/maps/dir//Main+Street+Guitar+%26+Drums/data=!4m8!4m7!1m0!1m5!1m1!1s0x885832d6693fffff:0x6d69f42fbd43708f!2m2!1d-82.4301625!2d34.9723299"#}
+{#                                     target="_blank" data-tracking-element-type="6"#}
+{#                                     jslog="56039; track:impression,click">Get directions</a>#}
+{#            <address class="qhkvMe " itemprop="address">#}
+{#                <div>21-F Plaza Drive,</div>#}
+{#                <div>Travelers Rest, SC 29690</div>#}
+{#                <div>United States</div>#}
+{#            </address>#}
+{#        </div>#}
+{#    </div>#}
+{#    <div class="kCmrbf"><h3 class="Gou21b">Business Hours</h3>#}
+{#        <div>#}
+{#            <table itemprop="openingHours">#}
+{#                <tbody>#}
+{#                <tr>#}
+{#                    <th class="x2TOCf">Mon:</th>#}
+{#                    <td class="o0m3Qb"><span class="WF8WNe">1:00 – 7:00 PM</span></td>#}
+{#                </tr>#}
+{#                <tr>#}
+{#                    <th class="x2TOCf">Tue:</th>#}
+{#                    <td class="o0m3Qb"><span class="WF8WNe">1:00 – 7:00 PM</span></td>#}
+{#                </tr>#}
+{#                <tr>#}
+{#                    <th class="x2TOCf">Wed:</th>#}
+{#                    <td class="o0m3Qb"><span class="WF8WNe">1:00 – 7:00 PM</span></td>#}
+{#                </tr>#}
+{#                <tr>#}
+{#                    <th class="x2TOCf">Thu:</th>#}
+{#                    <td class="o0m3Qb"><span class="WF8WNe">1:00 – 7:00 PM</span></td>#}
+{#                </tr>#}
+{#                <tr>#}
+{#                    <th class="x2TOCf">Fri:</th>#}
+{#                    <td class="o0m3Qb"><span class="WF8WNe">1:00 – 7:00 PM</span></td>#}
+{#                </tr>#}
+{#                <tr>#}
+{#                    <th class="x2TOCf">Sat:</th>#}
+{#                    <td class="o0m3Qb"><span class="WF8WNe">1:00 – 5:30 PM</span></td>#}
+{#                </tr>#}
+{#                <tr>#}
+{#                    <th class="x2TOCf">Sun:</th>#}
+{#                    <td class="o0m3Qb"><span class="WF8WNe">Closed</span></td>#}
+{#                </tr>#}
+{#                </tbody>#}
+{#            </table>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+
+
+<footer>
+    <a href="#" class="fa fa-youtube"></a>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
