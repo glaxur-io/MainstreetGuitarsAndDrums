@@ -1,12 +1,25 @@
-
+.navbar{
+    position: fixed;
+    width: 100%;
+}
 
 .fa-youtube {
   background: #bb0000;
   color: white;
 }
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
 
 .fa {
   padding: 5px;
+  border-radius: 50%;
   font-size: 30px;
   width: 40px;
   text-align: center;
@@ -25,4 +38,18 @@
     height: 50vh;
     color: white;
     text-align: center;
+}
+
+
+a{
+    text-decoration: none !important;
+    color: royalblue;
+}
+
+a:hover{
+    color: black;
+}
+
+li{
+    list-style: none;
 }

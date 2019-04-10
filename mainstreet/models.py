@@ -7,7 +7,7 @@ class Instruments(models.Model):
     description = models.TextField(max_length=2000)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image = models.ImageField()
-    video = models.FileField()
+    instagram = models.URLField(max_length=300, default="https://www.instagram.com/mainstreetvintageguitar/")
 
 
 class Equipment(models.Model):
@@ -16,5 +16,5 @@ class Equipment(models.Model):
     description = models.TextField(max_length=2000)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image = models.ImageField()
-    video = models.FileField()
+    instagram = models.URLField(max_length=300, default="https://www.instagram.com/mainstreetvintageguitar/")
 
