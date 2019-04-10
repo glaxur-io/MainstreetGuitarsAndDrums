@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import dj_database_url
 from os.path import normpath, join
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -31,6 +32,13 @@ ALLOWED_HOSTS = [
 ]
 
 
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
+AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
+AWS_STORAGE_BUCKET_NAME = 'mainstreetguitardrum'
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -41,6 +49,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mainstreet',
+    'storages',
+
 ]
 
 MIDDLEWARE = [
@@ -75,25 +85,24 @@ TEMPLATES = [
 WSGI_APPLICATION = 'config.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-DATABASES = {
-    'default': {
-              'ENGINE': 'django.db.backends.postgresql',
-              'NAME': 'mainstreetGandD',
-              'USER': 'postgres',
-              'PASSWORD': '',
-              'HOST': '127.0.0.1',
-              'PORT': '5432',
+if os.environ.get('DATABASE_URL'):
+    DATABASES = {
+       'default': dj_database_url.config(default=os.environ['DATABASE_URL']),
     }
-}
+    DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
+
+else:
+
+    DATABASES = {
+        'default': {
+                  'ENGINE': 'django.db.backends.postgresql',
+                  'NAME': 'mainstreetGandD',
+                  'USER': 'postgres',
+                  'PASSWORD': '',
+                  'HOST': '127.0.0.1',
+                  'PORT': '5432',
+        }
+    }
 
 
 # Password validation
