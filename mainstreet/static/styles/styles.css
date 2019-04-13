@@ -66,6 +66,14 @@ footer{
     float: bottom;
 }
 
+.mt-3{
+    padding-top: 10% !important;
+}
 
+.card{
+    border: black 1px solid;
+}
 
-
+.card-img-top{
+    border-bottom: black solid 1px
+}

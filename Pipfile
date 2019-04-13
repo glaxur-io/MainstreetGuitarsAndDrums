@@ -13,8 +13,9 @@ gunicorn = "*"
 whitenoise = "*"
 psycopg2 = "*"
 dj-database-url = "*"
-boto3 = "*"
 django-storages = "*"
+boto3 = "*"
+awscli = "*"
 
 [requires]
 python_version = "3.7"

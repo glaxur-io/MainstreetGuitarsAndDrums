@@ -13,7 +13,6 @@
 <body>
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand">MSGD</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -37,13 +36,25 @@
   </div>
 </nav>
 </header>
-<div class="intro_title">
-    <h1>Main Street Guitars and Drums</h1>
+<h1 style="text-align: center" class="mt-2">Equipment For Sale</h1>
+<div class="wholeCard mt-4">
+    {% for equipment_list in object_list %}
+        <div class="card" style="width: 21.5em;margin:0 auto;">
+            <img class="card-img-top" src="{{ equipment_list.image.url }}" alt="image">
+            <div class="card-body">
+                <h5 class="card-title" style="display: inline-block">{{ equipment_list.title }}</h5>
+                <h6 style="display: inline-block; float: right;">${{ equipment_list.price }}</h6>
+                <hr/>
+                <p class="card-text">{{ equipment_list.description }}</p>
+                <a href="{{ equipment_list.instagram }}" target="_blank" class="btn btn-info">More photos</a>
+            </div>
+        </div>
+        <br/>
+    {% endfor %}
 </div>
 
-
 <footer>
-    <a href="#" class="fa fa-youtube"></a>
+    <a href="https://www.instagram.com/mainstreetvintageguitar/" class="fa fa-instagram"></a>
 </footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
