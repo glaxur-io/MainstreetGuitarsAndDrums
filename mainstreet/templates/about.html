@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../static/styles/styles.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="../static/styles/logo.jpg">
-    <title>Equipment</title>
+    <title>About</title>
 </head>
 <body>
 <header>
@@ -44,22 +44,7 @@
         </div>
     </nav>
 </header>
-<h1 style="text-align: center" class="mt-2">Equipment For Sale</h1>
-<div class="wholeCard mt-4">
-    {% for equipment_list in object_list %}
-        <div class="card" style="width: 21.5em;margin:0 auto;">
-            <img class="card-img-top" src="{{ equipment_list.image.url }}" alt="image">
-            <div class="card-body">
-                <h5 class="card-title" style="display: inline-block">{{ equipment_list.title }}</h5>
-                <h6 style="display: inline-block; float: right;">${{ equipment_list.price }}</h6>
-                <hr/>
-                <p class="card-text">{{ equipment_list.description }}</p>
-                <a href="{{ equipment_list.instagram }}" target="_blank" class="btn btn-info">More photos</a>
-            </div>
-        </div>
-        <br/>
-    {% endfor %}
-</div>
+
 
 <footer>
     <a href="https://www.instagram.com/mainstreetvintageguitar/" class="fa fa-instagram"></a>

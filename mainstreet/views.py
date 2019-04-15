@@ -19,3 +19,6 @@ class InstrumentList(ListView):
 class EquipmentList(ListView):
     template_name = 'equipmentlist.html'
     model = Equipment
+
+class AboutOwner(TemplateView):
+    template_name = 'about.html'
