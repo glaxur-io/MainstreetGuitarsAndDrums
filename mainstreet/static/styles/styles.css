@@ -80,7 +80,7 @@ footer {
 }
 
 
-.ownerdiv{
+.ownerdiv {
     font-size: 33px;
     background-image: url("store.jpg");
     /*filter: blur(5px);*/
@@ -91,24 +91,26 @@ footer {
     /*text-align: center;*/
 }
 
-.ownername{
+.ownername {
     color: black;
 }
 
-.bgimage{
+.bgimage {
     height: 100vh;
     color: black;
     text-align: center;
 }
 
-@media (max-width: 375px){
-    .ownerdiv{
-       background-image: none;
+@media (max-width: 375px) {
+    .ownerdiv {
+        background-image: none;
     }
-    .bgimage{
-    height: 100vh;
-    color: black;
-    text-align: center;
-}
+
+    .bgimage {
+        height: 100vh;
+        color: black;
+        text-align: center;
+    }
+
 }
 
