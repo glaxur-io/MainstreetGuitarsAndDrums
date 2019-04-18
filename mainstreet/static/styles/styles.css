@@ -1,36 +1,37 @@
-.navbar{
+.navbar {
     width: 100%;
 }
 
 .fa-youtube {
-  background: #bb0000;
-  color: white;
+    background: #bb0000;
+    color: white;
 }
+
 .fa-instagram {
-  background: #125688;
-  color: white;
+    background: #125688;
+    color: white;
 }
 
 .fa-linkedin {
-  background: #007bb5;
-  color: white;
+    background: #007bb5;
+    color: white;
 }
 
 .fa {
-  padding: 5px;
-  border-radius: 50%;
-  font-size: 30px;
-  width: 40px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
 }
 
 .fa:hover {
     opacity: 0.7;
 }
 
-.intro_title{
+.intro_title {
     background-image: url("william-iven-17136-unsplash.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -39,49 +40,75 @@
     text-align: center;
 }
 
-a{
+a {
     text-decoration: none !important;
     color: royalblue;
 }
 
-a:hover{
+a:hover {
     color: blue;
 }
 
-li{
+li {
     list-style: none;
 }
 
-.main{
+.main {
     text-align: center;
 }
 
-html{
+html {
     position: relative;
 }
 
-footer{
+footer {
     text-align: center;
     background-color: lightgrey;
     float: bottom;
 }
 
-.mt-3{
+.mt-3 {
     padding-top: 10% !important;
 }
 
-.card{
+.card {
     border: black 1px solid;
 }
 
-.card-img-top{
+.card-img-top {
     border-bottom: black solid 1px
 }
 
-.card-img-top{
 
-}
-
-.aboutowner{
+.ownerdiv{
     font-size: 33px;
+    background-image: url("store.jpg");
+    /*filter: blur(5px);*/
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /*height: 100vh;*/
+    color: black;
+    /*text-align: center;*/
 }
+
+.ownername{
+    color: black;
+}
+
+.bgimage{
+    height: 100vh;
+    color: black;
+    text-align: center;
+}
+
+@media (max-width: 375px){
+    .ownerdiv{
+       background-image: none;
+    }
+    .bgimage{
+    height: 100vh;
+    color: black;
+    text-align: center;
+}
+}
+
