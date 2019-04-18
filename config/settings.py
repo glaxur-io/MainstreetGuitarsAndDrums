@@ -28,7 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'mainstreetvintageguitar.herokuapp.com',
-    'localhost'
+    'mainstreetvintageguitar.com',
+    'localhost',
 ]
 
 
